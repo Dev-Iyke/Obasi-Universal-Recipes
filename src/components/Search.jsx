@@ -8,9 +8,11 @@ const Search = () => {
 
 
   const handleSearch = (ingredients) => {
-    const search = ingredients.split(',').map((s) => s.trim())
-    console.log(search);
-    dispatch(fetchRecipes(search))
+    if (!ingredients.length == 0) {
+      const search = ingredients.split(',').map((s) => s.trim())
+      console.log(search);
+      dispatch(fetchRecipes(search))
+    }
   };
 
   return (
