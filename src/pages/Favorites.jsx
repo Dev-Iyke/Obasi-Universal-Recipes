@@ -1,5 +1,5 @@
 import SingleRecipe from "../components/SingleRecipe";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Favorites = () => {
   const { favorites, count } = useSelector((state) => state.favorites);

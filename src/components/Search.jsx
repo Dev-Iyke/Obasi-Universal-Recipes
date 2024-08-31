@@ -8,6 +8,7 @@ const Search = () => {
 
 
   const handleSearch = (ingredients) => {
+    // eslint-disable-next-line
     if (!ingredients.length == 0) {
       const search = ingredients.split(',').map((s) => s.trim())
       console.log(search);

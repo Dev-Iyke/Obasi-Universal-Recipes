@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+
+.ingredients{
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ingredient{
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.ingredient p{
+  max-inline-size: 20ch;
+}

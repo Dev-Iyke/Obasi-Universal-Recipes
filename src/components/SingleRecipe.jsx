@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { removeFromFavorites } from "../features/favorites/favoritesSlice";
 import { removeRecipes } from "../features/recipes/recipeSlice";
 import { useDispatch } from "react-redux";
@@ -21,6 +22,7 @@ const SingleRecipe = ({ label, calories, image, id, context }) => {
       <p>{calories}</p>
       <p>{id}</p>
       <img width={200} src={image} alt={label} />
+      <Link to={`/recipes/${id}`}>View More</Link>
       <button onClick={handleDeletion}>Delete recipe</button>
     </div>
   );
